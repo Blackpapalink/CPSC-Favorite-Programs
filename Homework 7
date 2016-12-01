@@ -1,0 +1,28 @@
+hallway = []
+
+#creates the number of doors in the hallway
+def number_of_doors(doors):
+	while doors > len(hallway):
+		hallway.append('closed')
+		return hallway
+
+def number_of_passes(passes):
+	count = 0
+	for count in range(0, passes):
+		hallway['closed'] = 'open' for 'closed' in hallway['closed']
+		count = count + 1
+		return hallway
+
+#creates an index for the amount of doors open
+def indexes_of_open_doors(doors, passes):
+	hallway.index('open')
+	return indexes_of_open_doors
+
+#counts the amount of open doors
+def doors_open(doors, passes):
+	hallway.count('open')
+	return doors_open
+
+number_of_doors(6)
+
+

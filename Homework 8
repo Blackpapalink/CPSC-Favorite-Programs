@@ -1,0 +1,18 @@
+import string
+def encode_rot13(letter):
+	rot13 = str.maketrans( 
+	'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 
+	'NOPQRSTUVWXYZABCDEFGHIJKLM')
+	translate = str.translate(letter.upper(), rot13)
+	return translate
+print(encode_rot13('Hello World'))
+
+def decode_rot13(letter):
+	rot13 = str.maketrans( 
+	'NOPQRSTUVWXYZABCDEFGHIJKLM','ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	)
+	translate = str.translate(letter.upper(), rot13)
+	return translate
+print(decode_rot13('URYYB JBEYQ'))
+	
+# A = 65 M = 77

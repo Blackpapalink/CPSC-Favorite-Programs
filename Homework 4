@@ -1,0 +1,23 @@
+# Welcome and Ask question
+print('Welcome to area calculator thingy')
+shape = input('Please pick a shape: circle, sphere, or cylinder: ')
+# Condition for Circle
+if('circle' == shape):
+	radius = float(input('What\'s the radius?'))
+	area = 3.1416 * radius ** 2
+	print('The area is ' + str(area))
+# Condition for Cylinder
+elif('cylinder' == shape):
+	radius = float(input('What\'s the radius?'))
+	height = float(input('What\'s the height?'))
+	area = (2 * 3.1416 * radius * height) + (2 * 3.1416 * radius ** 2)
+	print('The area is ' + str(area))
+# Condition for Sphere
+elif('sphere' == shape):
+	radius = float(input('What\'s the radius?'))
+	area = 4 * 3.1416 * radius ** 2
+	print('The area is ' + str(area))
+# If Condition is not met
+else:
+	print(shape + ' is an invalid choice. Try again.')
+print('Thanks for using area calculator')

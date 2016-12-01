@@ -1,0 +1,36 @@
+cookie = 0.83
+red_beans = 2.03
+rice = 2.01
+red_beans_and_rice = 3.11
+salad = 3.50
+rotisserie_chicken = 6.53
+fried_chicken = 4.01
+burger = 3.00
+cheese = 0.77
+bacon = 1.27
+double = 1.50
+triple = 2.00
+quad = 2.37
+ice_cream = 1.18
+ice_cream_sundae = 1.63
+pizza = 5.00
+supreme = 4.07
+sausage = 1.17
+pepperoni = 1.11
+mushroom = 0.71
+supersize =  2.00
+
+total = 0.00
+def add_to_total(item_price):
+	global total
+	total = item_price + total
+	return total
+	
+def get_total():
+	return total
+	print(total)
+	
+def clear_total():
+	
+
+	

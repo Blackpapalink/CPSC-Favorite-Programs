@@ -1,0 +1,22 @@
+#Enter the gyum pokemon cp, What's a gyum?
+print('Enter Gym Pokemon')
+#Assigns the Gyum's pokemon a value
+pkmn1_cp = input('What\'s Pokemon 1\'s combat power?')
+pkmn2_cp = input('What\'s Pokemon 2\'s combat power?')
+total_gym_cp = int(pkmn1_cp) + int(pkmn2_cp)
+#Prints the Gyum's total combat power
+print('Total gym combat power is ' + str(total_gym_cp))
+#Enter the challenger pokemon cp
+print('\nEnter the challenger pokemon')
+#Assigns the Challenger Pokemon's cp
+pkmn3_cp =input('What\'s Pokemon 1\'s combat power?')
+pkmn4_cp =input('What\'s Pokemon 2\'s combat power?')
+pkmn5_cp =input('What\'s Pokemon 3\'s combat power?')
+#Adds up the challenger's total cp
+total_chal_cp = int(pkmn3_cp) + int(pkmn4_cp) + int(pkmn5_cp)
+#States the challengers total cp
+print('Total challenger combat power is ' + str(total_chal_cp))
+#Compares the Gym leader and Challenger's cp 
+victory = total_gym_cp < total_chal_cp
+#Announce the Challenger's victory or defeat
+print('The challenger will win? ' + str(victory))

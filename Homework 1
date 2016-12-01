@@ -1,0 +1,9 @@
+first_name = 'Ronald'
+last_name = 'Hickerson'
+email = 'rhicker1@xula.com'
+cool = 'Dinosaurs are really cool'
+
+print('This is CPSC 1710!\n')
+print(first_name + ' ' + last_name)
+print(email)
+print(cool)
